@@ -1,7 +1,7 @@
 import Card from "./card";
 
 const hostingDesc = <ul className="list-disc pl-6">
-        <li>Static site deployment</li>
+        <li>Website deployment</li>
         <li>Docker</li>
         <li>Kubernetes</li>
     </ul>
@@ -13,9 +13,9 @@ const webDev = <ul className="list-disc pl-6">
     </ul>
 
 const anything = <ul className="list-disc pl-6">
-        <li>Marketing</li>
         <li>Social Media Management</li>
         <li>Custom PC/Server Builds</li>
+        <li>Don't see what you need? <a className="underline hover:cursor-pointer" href="#contactUs">Ask</a></li>
     </ul>
 
 export default function AboutCards() {
