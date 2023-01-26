@@ -1,19 +1,14 @@
 const splitTextContent = `
-        Hello world this is a paragraph that should overlay the slant div, although it will
-        become unredable over the white text, this will need to be fancy in order to fix.
-        I will probably calculate the line for the slanted rectangle as we know this is 
-        a fancy-schmancy 45-45-90 right triangle. The calculation should be quite easy.
-        We can determine where the text lies on the slant based on its position down relative
-        to the top of the measurable rectangle. And we can also measure the distance from the 
-        right side of the measureable rectangle since this is the left side of the triangle.
+        We are a dedicated collection of software developers and other tech professionals
+        with a passion for learning and an affinity for taking on an assortment of challenges.
+        Please reach out with anything we can do for you.
     `
 
 const darkBox = typeof(window) !== "undefined" ? document.getElementById("darkBox") : null;
 
 
 function isOverlapDark(boundaryPos: number, elemPos: DOMRect) {
-    const avgElemX = (elemPos.right + elemPos.left) / 2
-    return (boundaryPos > avgElemX)
+    return (boundaryPos > elemPos.left)
 }
 
 function calcBoundaryLinePos(behindElemPos: DOMRect, elemPos: DOMRect) {
@@ -73,7 +68,7 @@ export default function SplitDisplay() {
             <div className="flex w-full h-[30rem]">
                 <div id="darkBox" className="h-full w-[800px] bg-black after:content-[''] after:absolute after:h-[60rem] after:w-[800px] after:bg-black after:rotate-[-45deg] after:origin-top-right after:z-[-1]"></div>
                 <div className="absolute w-full h-full bg-transparent p-8">
-                    <p id="splitCharacters" className="text-4xl">
+                    <p id="splitCharacters" className="text-6xl">
                         {generateTextElements(splitTextContent)}
                         {styleLightOrDark()}
                     </p>
