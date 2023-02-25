@@ -15,7 +15,7 @@ const webDev = <ul className="list-disc pl-6">
 const anything = <ul className="list-disc pl-6">
         <li>Social Media Management</li>
         <li>Custom PC/Server Builds</li>
-        <li>Don't see what you need? <a className="underline hover:cursor-pointer" href="#contactUs">Ask</a></li>
+        <li>Don&apos;t see what you need? <a className="underline hover:cursor-pointer" href="#contactUs">Ask</a></li>
     </ul>
 
 export default function AboutCards() {
