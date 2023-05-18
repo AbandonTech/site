@@ -1,15 +1,15 @@
 export default function Banner() {
     return (
-        <div className="w-full h-[50vh] bg-black">
-            <div className="flex flex-row h-full items-center justify-center">
-                <div className="text-white pr-10">
-                    <h1 className="select-none text-8xl md:text-9xl">@</h1>
-                </div>
-                <div className="h-full border-solid border-white border-8 p-2"></div>
-                <div className="text-white text-5xl md:text-7xl ml-10">
-                    <h1>Abandon</h1>
-                    <h1>Tech</h1>
-                </div>
+        <div className="text-white w-screen pt-20 bg-gradient-to-b from-slate-700">
+            <div className="flex flex-col items-center">
+                <p className="text-7xl"><span className="text-orange-400">Custom</span> solutions</p>
+                <p className="text-6xl md:mt-4">to fit <span className="text-orange-400">your</span> business</p>
+                <p className="mt-8">
+                    We strive to provide <span className="text-orange-400">professional </span> 
+                    and <span className="text-orange-400">personal</span> solutions to fit any tech needs you may have.
+                </p>
+
+                <a className="bg-white bg-opacity-0 mt-10 hover:bg-opacity-5 text-orange-400 font-semibold hover:text-orange-200 py-2 px-4 border border-orange-400 hover:border-orange-200 hover:cursor-pointer rounded" href="#contactUs">Contact Us</a>
             </div>
         </div>
     )

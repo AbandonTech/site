@@ -1,22 +1,28 @@
 import Card from "./card";
 
-const hostingDesc = <ul className="list-disc pl-6">
-        <li>Website deployment</li>
-        <li>Docker</li>
-        <li>Kubernetes</li>
-    </ul>
+const hostingDesc = <p>
+    Website deployment
+    <br />
+    Docker
+    <br />
+    Kubernetes
+</p>
 
-const webDev = <ul className="list-disc pl-6">
-        <li>Design</li>
-        <li>Website Mangement</li>
-        <li>API Integrations</li>
-    </ul>
+const webDev = <p>
+    Design
+    <br />
+    Website Mangement
+    <br />
+    API Integrations
+</p>
 
-const anything = <ul className="list-disc pl-6">
-        <li>Social Media Management</li>
-        <li>Custom PC/Server Builds</li>
-        <li>3D Printing</li>
-    </ul>
+const anything = <p>
+    Social Media Management
+    <br />
+    API Integrations
+    <br />
+    3D Printing
+</p>
 
 export default function AboutCards() {
     return (
