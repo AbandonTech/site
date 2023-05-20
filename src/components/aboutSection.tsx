@@ -1,29 +1,37 @@
-export default function AboutSection(
-    props: {
-        title: string, 
+interface AboutProps {
+    title: string, 
         description: string,
-        listItems: Array<string>
-    }
+        listItems: Array<string>,
+        reversed?: boolean
+}
+
+export default function AboutSection(
+    props: AboutProps
     ) {
     const formatedList = props.listItems.map((str, i) => {
             return <li key={i}>{str}</li>
         }
     )
 
+    const descElement = <div className="flex-row w-1/3 p-6">
+        <div className="flex-col">
+            <h1 className="text-4xl md:text-6xl">{props.title}</h1>
+            <p className="text-xs md:text-base pt-4">{props.description}</p>
+            <ul className="text-xs md:text-base list-disc list-inside pl-2 pt-4">
+                {formatedList}
+            </ul>
+        </div>
+    </div>
+
+    const imageElem = <div className="w-1/3 p-6">
+        Image here
+    </div>
+
+    let renderElem = props.reversed === true ? [imageElem, descElement] : [descElement, imageElem]
+
     return (
-        <div className="flex w-screen justify-center text-white pt-12">
-            <div className="flex-row w-1/3">
-                <div className="flex-col">
-                    <h1 className="text-4xl md:text-6xl">{props.title}</h1>
-                    <p className="text-xs md:text-base pt-4">{props.description}</p>
-                    <ul className="text-xs md:text-base list-disc list-inside pl-2 pt-4">
-                        {formatedList}
-                    </ul>
-                </div>
-            </div>
-            <div className="w-1/3">
-                Image here
-            </div>
+        <div className="flex w-screen justify-center text-white p-12">
+            {renderElem}
         </div>
     )
 }
