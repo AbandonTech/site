@@ -1,5 +1,6 @@
 export default function Navbar() {
     const navOptions = {
+        "home": "#home",
         "services": "#services",
         "contact": "#contactUs"
     };
@@ -15,9 +16,8 @@ export default function Navbar() {
     }
 
     return (
-        <div className="fixed w-screen bg-gradient-to-b from-slate-800 text-white items-center h-12">
-            <div className="flex flex-row h-full space-x-6 items-center">
-                <a className="text-2xl text-orange-400 pl-6" href="#home">AbandonTech</a>
+        <div className="w-screen bg-white text-orange-500 items-center h-12 pr-6">
+            <div className="flex flex-row justify-end h-full space-x-6 items-center">
                 {generatedNavLinks}
             </div>
         </div>
