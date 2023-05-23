@@ -1,5 +1,8 @@
 import bgImage from "@/components/curveBgClipped.svg";
 
+// NextJs <Image> component does not currently seem to be compatible with images where both a
+// predetermined height and width cannot be known.
+
 export default function Banner() {
     return (
         <div>
@@ -12,7 +15,7 @@ export default function Banner() {
                 </div>
             </div>
 
-            <img src={bgImage.src} className="w-screen"/>
+            <img src={bgImage.src} className="w-screen" alt="Orange, curved background for website banner"/>
             
         </div>
     )
