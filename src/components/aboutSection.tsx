@@ -1,3 +1,7 @@
+// import OrangeCircle from "@/components/orangeCircle.svg";
+
+const OrangeCircle = "./orangeCircle.svg"
+
 interface AboutProps {
     title: string, 
         description: string,
@@ -17,7 +21,7 @@ export default function AboutSection(
         <div className="flex-col">
             <h1 className="text-4xl md:text-6xl">{props.title}</h1>
             <p className="text-xs md:text-base pt-4">{props.description}</p>
-            <ul className="text-xs md:text-base list-disc list-inside pl-2 pt-4">
+            <ul className={`text-xs md:text-base list-image=[url(${OrangeCircle})] list-inside pl-2 pt-4`}>
                 {formatedList}
             </ul>
         </div>
