@@ -2,34 +2,45 @@ import AboutSection from "@/components/aboutSection";
 import Banner from "@/components/banner";
 import Navbar from "@/components/navbar";
 
-const aboutSect1 =  {
+import hostingImg from "@/components/hosting.svg";
+import otherImg from "@/components/other.svg";
+import webDevImg from "@/components/webDev.svg";
+
+const aboutHosting =  {
     title: "Hosting",
-    description: "Hello world, this is a test since I am too lazy to generate lorem ipsum. I am hoping this wraps the next line.",
+    description: `We provide a number of solutions for hosting applications and services. Whether it is a simple 
+    static site or a complex and distributed service, we would love to assist you in reliably and scalably deploying 
+    your applications.`,
     listItems: [
         "Website Deployment", 
         "Docker", 
         "Kubernetes"
-    ]
+    ],
+    imgPath: hostingImg.src
 }
 
-const aboutSect2 =  {
-    title: "Hosting",
-    description: "Hello world, this is a test since I am too lazy to generate lorem ipsum. I am hoping this wraps the next line.",
+const aboutWebDev =  {
+    title: "Web Dev",
+    description: `Our team is made up of talented developers and designers. Collectively we cover a large range of 
+    sills across fullstack web development.`,
     listItems: [
-        "Website Deployment", 
-        "Docker", 
-        "Kubernetes"
-    ]
+        "Design", 
+        "Management", 
+        "Api Integrations"
+    ],
+    imgPath: webDevImg.src
 }
 
-const aboutSect3 =  {
-    title: "Hosting",
-    description: "Hello world, this is a test since I am too lazy to generate lorem ipsum. I am hoping this wraps the next line.",
+const aboutOther =  {
+    title: "Anything Else",
+    description: `Our team can also assist in a number of other areas within technology. If you do not see what you 
+    need listed here, please feel free to reach out.`,
     listItems: [
-        "Website Deployment", 
-        "Docker", 
-        "Kubernetes"
-    ]
+        "Social Media Management",
+        "Business Network Management",
+        "3D Printing", 
+    ],
+    imgPath: otherImg.src
 }
 
 export default function Home() {
@@ -39,16 +50,16 @@ export default function Home() {
             <Banner />
 
             <AboutSection
-                {...aboutSect1}
+                {...aboutHosting}
             />
 
             <AboutSection
-                {...aboutSect2}
+                {...aboutWebDev}
                 reversed={true}
             />
 
             <AboutSection
-                {...aboutSect3}
+                {...aboutOther}
             />
             
         </div>

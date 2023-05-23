@@ -6,6 +6,7 @@ interface AboutProps {
     title: string, 
         description: string,
         listItems: Array<string>,
+        imgPath: string,
         reversed?: boolean
 }
 
@@ -28,7 +29,7 @@ export default function AboutSection(
     </div>
 
     const imageElem = <div className="w-1/3 p-6" key="imgElem">
-        Image here
+        <img src={props.imgPath} className="max-h-72" />
     </div>
 
     let renderElem = props.reversed === true ? [imageElem, descElement] : [descElement, imageElem]
