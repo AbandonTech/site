@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'primary': ['Segoe UI']
+      'primary': ['Courier New']
     }
   },
   plugins: [],
