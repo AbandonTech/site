@@ -16,7 +16,7 @@ export default function AboutSection(
     props: AboutProps
     ) {
         const formatedList = props.listItems.map((str, i) => {
-            return <li key={i}>{str}</li>
+            return <li key={i}><span className="ml-1">{str}</span></li>
         }
     )
 
@@ -38,16 +38,20 @@ export default function AboutSection(
 
     return (
         <div className="text-white">
-            <div className="md:hidden flex flex-col justify-center w-full p-12">
-                <Image src={props.imgPath} alt={"depiction of " + props.title} width={300} height={300}  className="max-h-72" />
+            <div className="md:hidden flex flex-col justify-center w-full px-12 pt-12">
 
-                <div className="block w-full mt-8">
+                <div className="block w-full">
                     <h1 className="text-5xl text-center">{props.title}</h1>
                     <p className="text-s pt-4">{props.description}</p>
                     <ul className={"text-s list-inside pl-2 pt-4 " + orangeCircleStyle}>
                         {formatedList}
                     </ul>
                 </div>
+
+                <div className="mt-12">
+                    <Image src={props.imgPath} alt={"depiction of " + props.title} width={300} height={300}  className="max-h-72" />
+                </div>
+                
             </div>
 
             <div className="hidden md:flex w-screen justify-center p-12">

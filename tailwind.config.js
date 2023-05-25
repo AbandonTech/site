@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'primary': ['Courier New']
+      'primary': ['HammersmithOne']
     }
   },
   plugins: [],

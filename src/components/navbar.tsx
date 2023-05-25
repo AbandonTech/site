@@ -9,7 +9,7 @@ export default function Navbar() {
 
     for (const [key, val] of Object.entries(navOptions)) {
         generatedNavLinks.push(
-            <a className="flex h-full items-center justify-center duration-300 hover:text-orange-400 hover:cursor-pointer" href={val} key={key}>
+            <a className="flex h-full items-center justify-center duration-300 hover:text-orange-600 hover:cursor-pointer" href={val} key={key}>
                 <span className="capitalize">{key}</span>
             </a>
         );         

@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: HammersmithOne;
+    src: url("fonts/HammersmithOne-Regular.ttf");
+  }
