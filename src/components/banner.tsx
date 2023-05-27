@@ -1,16 +1,22 @@
+import bgImage from "@/components/curveBgClipped.svg";
+
+// NextJs <Image> component does not currently seem to be compatible with images where both a
+// predetermined height and width cannot be known.
+
 export default function Banner() {
     return (
-        <div className="w-full h-[50vh] bg-black">
-            <div className="flex flex-row h-full items-center justify-center">
-                <div className="text-white pr-10">
-                    <h1 className="select-none text-8xl md:text-9xl">@</h1>
-                </div>
-                <div className="h-full border-solid border-white border-8 p-2"></div>
-                <div className="text-white text-5xl md:text-7xl ml-10">
-                    <h1>Abandon</h1>
-                    <h1>Tech</h1>
+        <div>
+            <div className="text-gray-950 bg-white py-20 md:py-32">
+                <div className="flex flex-col items-center">
+                    <h1 className="text-5xl md:text-9xl font-bold select-none">AbandonTech</h1>
+                    <h3 className="text-base md:text-4xl mt-6"><strong className="text-orange-400">Custom</strong> solutions to fit your <strong className="text-orange-400">business</strong></h3>
+
+                    <a className="bg-white text-xl bg-opacity-0 mt-16 duration-300 hover:bg-opacity-5 text-orange-400 font-semibold py-4 px-6 border border-orange-400 hover:border-orange-600 hover:text-orange-600 hover:bg-orange-300 hover:cursor-pointer rounded" href="#contactUs">Contact Us</a>
                 </div>
             </div>
+
+            <img src={bgImage.src} className="w-full select-none" alt="Orange, curved background for website banner"/>
+            
         </div>
     )
 }
