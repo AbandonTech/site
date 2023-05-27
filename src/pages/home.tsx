@@ -1,5 +1,6 @@
 import AboutSection from "@/components/aboutSection";
 import Banner from "@/components/banner";
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
 import hostingImg from "@/components/hosting.svg";
@@ -61,6 +62,8 @@ export default function Home() {
             <AboutSection
                 {...aboutOther}
             />
+
+            <Footer />
             
         </div>
     )
