@@ -6,14 +6,15 @@ import envelopImage from "@/components/envelope.svg";
 export default function Footer() {
     return (
         <div id="contactUs" className="relative w-screen">
+            <img src={bgImage.src} className="md:hidden w-full rotate-180 z-0 select-none" alt="Orange, curved background for website banner"/>
 
-            <div className="absolute text-gray-950 bg-transparent w-full h-48 z-10 top-14">
-                <div className="flex flex-row justify-center w-2/3 top-64">
+            <div className="text-gray-950 w-full bg-white p-6 md:p-0 md:bg-transparent md:h-48 md:z-10 md:absolute md:top-14">
+                <div className="flex flex-row justify-center w-full md:w-2/3 md:top-64">
                     <span><a href="mailto:abandontech@gmail.com"><Image className="inline-block mr-1" src={envelopImage} width={20} height={50} alt="envelop icon" />AbandonTech@gmail.com</a></span>
                 </div>
             </div>
 
-            <img src={bgImage.src} className="w-full rotate-180 z-0 select-none" alt="Orange, curved background for website banner"/>
+            <img src={bgImage.src} className="hidden md:block w-full rotate-180 z-0 select-none" alt="Orange, curved background for website banner"/>
             
         </div>
     )
