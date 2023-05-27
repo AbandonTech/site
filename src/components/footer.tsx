@@ -13,7 +13,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <img src={bgImage.src} className="w-full rotate-180 z-0" alt="Orange, curved background for website banner"/>
+            <img src={bgImage.src} className="w-full rotate-180 z-0 select-none" alt="Orange, curved background for website banner"/>
             
         </div>
     )
