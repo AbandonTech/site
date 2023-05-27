@@ -15,7 +15,7 @@ export default function Banner() {
                 </div>
             </div>
 
-            <img src={bgImage.src} className="w-full select-none" alt="Orange, curved background for website banner"/>
+            <img src={bgImage.src} className="block w-screen select-none my-[-2px]" alt="Orange, curved background for website banner"/>
             
         </div>
     )
