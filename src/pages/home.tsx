@@ -15,7 +15,7 @@ const aboutHosting =  {
         "Website Deployment", 
         "Docker", 
         "Kubernetes"
-    ],
+    ].sort(),
     imgPath: hostingImg.src
 }
 
@@ -27,7 +27,7 @@ const aboutWebDev =  {
         "Design", 
         "Management", 
         "Api Integrations"
-    ],
+    ].sort(),
     imgPath: webDevImg.src
 }
 
@@ -37,9 +37,9 @@ const aboutOther =  {
     need listed here, please feel free to reach out.`,
     listItems: [
         "Social Media Management",
-        "Business Network Management",
+        "Search Engine Optimization",
         "3D Printing", 
-    ],
+    ].sort(),
     imgPath: otherImg.src
 }
 
