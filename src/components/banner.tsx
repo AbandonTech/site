@@ -15,8 +15,8 @@ export default function Banner() {
                 </div>
             </div>
 
-            <div className=" w-screen h-20 overflow-x-hidden mt-[-2px] md:h-48">
-                <img src={bgImage.src} className="block scale-150 w-screen select-none" alt="Orange, curved background for website banner"/>
+            <div className="w-screen h-20 overflow-x-hidden mt-[-2px] md:h-48">
+                <img src={bgImage.src} className="block scale-150 w-screen select-none md:mt-[-80px]" alt="Orange, curved background for website banner"/>
             </div>
             
             
