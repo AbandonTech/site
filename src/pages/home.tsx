@@ -26,7 +26,7 @@ const aboutWebDev =  {
     listItems: [
         "Design", 
         "Management", 
-        "Api Integrations"
+        "API Integrations"
     ].sort(),
     imgPath: webDevImg.src
 }
